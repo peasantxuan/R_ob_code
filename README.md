@@ -34,3 +34,8 @@ rob_values = model.calculate_rob(R, p_vector)
 # 3. Validation via Simulation
 from rob_model import run_monte_carlo
 p_epi, rob_sim = run_monte_carlo(R, seed_idx=0, max_size=1000)
+
+
+## Citation
+Wang, B., & Valdano, E. (2026). Redefining and estimating the early-phase reproduction ratio for epidemic outbreaks in spatially structured populations.
+
