@@ -1,3 +1,6 @@
+#### Basic function for implementing our new theory #####
+
+
 import numpy as np
 import pandas as pd
 from scipy.optimize import root
