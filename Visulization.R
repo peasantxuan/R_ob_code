@@ -1,11 +1,5 @@
 ############################################
-# PROJECT: Reproduction Number Analysis
-# STATUS: FULL SCRIPT (ALL FIGURES PRESERVED)
-# NOTES:
-# - No figure removed
-# - Paths unified
-# - Structure cleaned
-# - Redundant code minimized ONLY when identical
+# PROJECT: Short version for making all plots of this paper
 ############################################
 
 ##############################
@@ -28,17 +22,6 @@ OUTPUT_DIR <- "output/"
 
 data(World)
 
-middle_east_countries <- c("Saudi Arabia","Iran","Iraq","Israel","Jordan","Lebanon","Syria","Yemen","Oman","United Arab Emirates","Qatar","Bahrain","Kuwait","Turkey","Egypt")
-
-World <- World %>%
-  filter(continent != "Antarctica") %>%
-  mutate(
-    Continent_Custom = case_when(
-      name %in% middle_east_countries ~ "Middle East",
-      continent == "Asia" ~ "Asia (Excluding Middle East)",
-      TRUE ~ as.character(continent)
-    )
-  )
 
 World <- World %>%
   mutate(
